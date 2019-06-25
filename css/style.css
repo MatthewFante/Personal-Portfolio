@@ -1,0 +1,16 @@
+
+
+.profileImg{
+    width: 200px;
+    height: 200px;
+}
+
+.centered{
+    text-align: center;
+}
+
+.aPlusBadge{
+    width: 100px;
+    height: 90px;
+    opacity: 50%;
+}
