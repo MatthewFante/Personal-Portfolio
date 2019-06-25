@@ -12,5 +12,9 @@
 .aPlusBadge{
     width: 100px;
     height: 90px;
-    opacity: 50%;
+}
+
+.skills{
+    width: 100px;
+    height: 100px;
 }
