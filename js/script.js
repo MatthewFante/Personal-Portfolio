@@ -22,3 +22,22 @@ function fillConsultationModal(){
     return html;
 }
 $('.consultationModalBlank').html(fillConsultationModal());
+
+
+
+// Parse parameters passed from the booking form and create a confirmation message with it
+
+// Create a variable and store the url parameters in in
+let searchParams = new URLSearchParams(window.location.search); 
+
+// Extract the info needed for the confirmation
+let consultFirstName = searchParams.get('consultFirstName');
+let consultEmail = searchParams.get('consultEmail');
+
+//Create the HTML content for the confirmation and place in on the page
+function fillConfirmation(){
+    var html = "";
+    html += "Thank you, " + consultFirstName + ", I will be in touch with you shortly.<br />";
+    return html;
+};
+$('.confirmation').html(fillConfirmation());

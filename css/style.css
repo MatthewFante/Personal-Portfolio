@@ -5,6 +5,10 @@
     height: 200px;
 }
 
+.brackets{
+    display: none;
+}
+
 .centered{
     text-align: center;
 }
@@ -18,13 +22,16 @@
     background-image: linear-gradient(#ffc107, #fff);
 }
 
+.goHome a,
 small a{
     color: rgb(52, 58, 64);
     text-decoration: none;
 }
+
+.goHome a:hover,
 small a:hover{
     color: black;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .navbar-brand{
@@ -37,3 +44,12 @@ small a:hover{
         height: 75px;
     }
  }
+
+
+@media (min-width: 560px) {
+    .brackets{
+        display: inline;
+        width: 150px;
+        height: 150px;
+    }
+}
