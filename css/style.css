@@ -9,17 +9,31 @@
     text-align: center;
 }
 
-.aPlusBadge{
-    width: 100px;
-    height: 90px;
-}
-
 .skills{
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
 }
 
-
-.card img{
-
+.jumbotron{
+    background-image: linear-gradient(#ffc107, #fff);
 }
+
+small a{
+    color: rgb(52, 58, 64);
+    text-decoration: none;
+}
+small a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+.navbar-brand{
+    color: rgb(52, 58, 64);
+}
+
+@media (min-width: 992px) { 
+    .skills{
+        width: 75px;
+        height: 75px;
+    }
+ }

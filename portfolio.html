@@ -13,7 +13,7 @@
   <body class="d-flex flex-column h-100">
     <header>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-warning shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning shadow">
             <a class="navbar-brand" href="index.html">Matthew Fante</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -27,7 +27,7 @@
                     <a class="nav-link text-dark" href="portfolio.html">Portfolio</a>
                 </li>
                 <li class="nav-item mx-auto">
-                    <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModalScrollable">
+                    <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#contactModal">
                             Contact
                     </button>
                 </li>
@@ -39,31 +39,32 @@
 
     <main class="flex-shrink-0">
         <!-- Main content -->
-<div class="container">
-        <div class="card-deck mt-5">
+<div class="container centered">
+        <h1 class="mt-4">Front End Web Development Portfolio</h1>
+        <div class="card-deck mt-4">
             <div class="card">
-              <a href="https://github.com/MatthewFante/Dog_Walker_App"><img src="img/dogWalker.png" class="card-img-top customFade" alt="..."></a>
+              <a href="https://github.com/MatthewFante/Dog_Walker_App" target="_blank"><img src="img/dogWalker.png" class="card-img-top customFade" alt="..."></a>
               <div class="card-body">
                 <h5 class="card-title">Dog Walker App</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 <div class="d-flex justify-content-between align-items-center">
                  <div class="btn-group">
-                  <a href="https://github.com/MatthewFante/Dog_Walker_App" class="btn btn-sm btn-outline-secondary">GitHub</a>
-                  <a href="https://matthewfante.github.io/Dog_Walker_App/" class="btn btn-sm btn-outline-secondary">Live</a>
+                  <a href="https://github.com/MatthewFante/Dog_Walker_App" target="_blank" class="btn btn-sm btn-outline-secondary">GitHub</a>
+                  <a href="https://matthewfante.github.io/Dog_Walker_App/" target="_blank" class="btn btn-sm btn-outline-secondary">Live</a>
                  </div>
                  <small class="text-muted">May 2019</small>
                </div>
               </div>
             </div>
             <div class="card">
-              <a href="https://github.com/MatthewFante/JavaScript_Sandbox"><img src="img/jsSandbox.png" class="card-img-top customFade" alt="..."></a>
+              <a href="https://github.com/MatthewFante/JavaScript_Sandbox" target="_blank"><img src="img/jsSandbox.png" class="card-img-top customFade" alt="..."></a>
               <div class="card-body">
                 <h5 class="card-title">Javascript Sandbox</h5>
                 <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                 <div class="d-flex justify-content-between align-items-center">
                  <div class="btn-group">
-                  <a href="https://github.com/MatthewFante/JavaScript_Sandbox" class="btn btn-sm btn-outline-secondary">GitHub</a>
-                  <a href="https://matthewfante.github.io/JavaScript_Sandbox/" class="btn btn-sm btn-outline-secondary">Live</a>
+                  <a href="https://github.com/MatthewFante/JavaScript_Sandbox" target="_blank" class="btn btn-sm btn-outline-secondary">GitHub</a>
+                  <a href="https://matthewfante.github.io/JavaScript_Sandbox/" target="_blank" class="btn btn-sm btn-outline-secondary">Live</a>
                  </div>
                  <small class="text-muted">June 2019</small>
                </div>
@@ -76,29 +77,31 @@
         <!-- Contact Modal -->
 
            <!-- Modal -->
-    <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalScrollableTitle">Contact Me!</h5>
+                        <h5 class="modal-title" id="contactModalTitle">Contact Me!</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
 
-                    <div class="modal-body mx-auto centered ">
+                    <div class="modal-body mx-auto centered contactModal">
                         <a href="https://www.facebook.com/matt.fante" target="_blank"><img class="px-3" src="img/facebook.svg" alt="Facebook"></a>
                         <a href="https://github.com/MatthewFante" target="_blank"><img class="px-3" src="img/github.svg" alt="GitHub"></a><br /><br />
                         <a href="https://www.linkedin.com/in/matthewfante/" target="_blank"><img class="px-3" src="img/linkedin.svg" alt="LinkedIn"></a>
                         <a href="https://twitter.com/matthew_fante" target="_blank"><img class="px-3" src="img/twitter.svg" alt="Twitter"></a><br /><br />
-                        <a href="mailto:matthew.fante@gmail.com" class="contactLink">matthew.fante@gmail.com</a><br />
-                        <a href="tel:+1-502-641-3968" class="contactLink">502-641-3968</a>                    
+                        <a href="mailto:matthew.fante@gmail.com" class="contactLink">matthew.fante@gmail.com</a><br />              
                     </div>
 
                 </div>
             </div>
         </div>
         <!-- /Contact Modal -->
+
+
+
     </main>
 
     <!-- Footer -->
@@ -106,7 +109,7 @@
           <div class="container">
                 <div class="row">
                     <div class="mx-auto py-2">
-                        <div class="text-muted"><small>&copy; Matthew Fante 2019</small></div>
+                        <div class="text-muted"><small><a href="index.html">&copy; Matthew Fante 2019</small></a>
                     </div>
                 </div>
           </div>
