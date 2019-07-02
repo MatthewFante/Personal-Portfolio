@@ -1,0 +1,48 @@
+<div class="modal fade" id="consultationModal" tabindex="-1" role="dialog" aria-labelledby="consultationModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="consultationModalTitle">Consultation Request</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+
+                <div class="modal-body mx-auto">
+                    <!-- [Consultation Modal Content] -->
+                    <form action="confirmation.html" method="GET">
+                        <div class="form-row">
+                            <div class="col">
+                                <label class="sr-only" for="consultFirstName">First Name</label>
+                                <input type="text" name="consultFirstName" class="form-control" placeholder="First name" required>
+                            </div>
+                            <div class="col">
+                                <label class="sr-only" for="consultLastName">Last Name</label>
+                                <input type="text" name="consultLastName"  class="form-control" placeholder="Last name" required>
+                            </div>
+                        </div>
+                        <div class="form-row mt-3">
+                            <div class="col">
+                                <label class="sr-only" for="consultEmail">Email Address</label>
+                                <input type="email" name="consultEmail" class="form-control" placeholder="Email Address" required>
+                            </div>
+                        </div>
+                        <div class="form-row mt-3">
+                            <div class="col">
+                                <label class="sr-only" for="consultCompany">Company Name</label>
+                                <input type="text" name="consultCompany" class="form-control" placeholder="Company Name">
+                            </div>
+                        </div>
+                        <div class="form-row mt-3">
+                            <label class="sr-only" for="consultDescription">Description</label>
+                            <textarea class="form-control" name="consultDescription" placeholder="Please provide a brief description of your development needs..." rows="5"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary mt-3">Submit Request</button>
+                    </form>
+                    <!-- [Consultation Modal Content] -->
+                </div>
+            </div>
+        </div>
+    </div>
