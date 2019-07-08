@@ -1,4 +1,4 @@
-// Populate Navbar, Contact Modal, and Footer Content
+// Populate Navbar, Modal, and Footer Contents
 function fillNav(){
     let html='<nav class="bg-warning navbar navbar-expand-lg navbar-light"><a class=navbar-brand href=index.html>Matthew Fante</a> <button class=navbar-toggler data-target=#navbarNav data-toggle=collapse type=button aria-controls=navbarNav aria-expanded=false aria-label="Toggle navigation"><span class=navbar-toggler-icon></span></button><div class="collapse navbar-collapse"id=navbarNav><ul class="ml-auto navbar-nav"><li class="mx-auto nav-item"><a class="nav-link text-dark"href=index.html>Home</a><li class="mx-auto nav-item"><a class="nav-link text-dark"href=portfolio.html>Portfolio</a><li class="mx-auto nav-item"><button class="btn btn-outline-dark"data-target=#contactModal data-toggle=modal type=button>Contact</button></ul></div></nav>';
     return html;
@@ -25,19 +25,20 @@ $('.consultationModalBlank').html(fillConsultationModal());
 
 
 
-// Parse parameters passed from the booking form and create a confirmation message with it
 
+// Parse the parameters passed from the consultation form and create a confirmation message with it
 // Create a variable and store the url parameters in in
-let searchParams = new URLSearchParams(window.location.search); 
+let consultationFormContents = new URLSearchParams(window.location.search); 
 
 // Extract the info needed for the confirmation
-let consultFirstName = searchParams.get('consultFirstName');
-let consultEmail = searchParams.get('consultEmail');
+let consultFirstName = consultationFormContents.get('consultFirstName');
+let consultEmail = consultationFormContents.get('consultEmail');
 
 //Create the HTML content for the confirmation and place in on the page
 function fillConfirmation(){
     var html = "";
-    html += "Thank you, " + consultFirstName + ", I will be in touch with you shortly.<br />";
+    html += "<p>Thank you, " + consultFirstName + ", I am looking forward to working with you! I will be in touch with you shortly.</p>";
+    html += "<p>Watch for an email at " + consultEmail + "!</p>";
     return html;
 };
 $('.confirmation').html(fillConfirmation());
