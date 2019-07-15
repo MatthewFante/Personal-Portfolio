@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Mallanna&display=swap');
 
+*{
+    font-family: 'Mallanna', sans-serif;
+}
 
 .profileImg{
     width: 200px;
